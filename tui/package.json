@@ -1,0 +1,21 @@
+{
+  "name": "office365-tui",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Ink-based TUI for running Office365 PowerShell scripts (wizard and advanced modes)",
+  "scripts": {
+    "dev": "tsx src/index.tsx",
+    "start": "tsx src/index.tsx"
+  },
+  "dependencies": {
+    "ink": "^5.0.1",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "@types/react": "^18.3.3",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.2"
+  }
+}

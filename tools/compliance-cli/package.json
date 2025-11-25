@@ -1,0 +1,27 @@
+{
+  "name": "compliance-cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Quality-of-life CLI for Microsoft 365 compliance: licensing, roles, labels, and audit APIs (no PowerShell).",
+  "bin": {
+    "compliance-cli": "dist/index.js"
+  },
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@azure/identity": "^4.5.0",
+    "@microsoft/microsoft-graph-client": "^3.0.7",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.5",
+    "undici": "^6.19.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "typescript": "^5.6.2",
+    "tsx": "^4.19.0"
+  }
+}
